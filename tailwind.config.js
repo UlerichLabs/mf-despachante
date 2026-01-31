@@ -8,10 +8,10 @@ export default {
         extend: {
             colors: {
                 mf: {
-                    dark: '#0f0f0f',   // Fundo Dark Material
-                    surface: '#1e1e1e', // Cor dos cards
-                    blue: '#00b4d8',   // Destaque (Botões)
-                    red: '#ef233c',    // Alertas/Secundário
+                    dark: '#0f0f0f',
+                    surface: '#1e1e1e',
+                    blue: '#00b4d8',
+                    red: '#ef233c',
                 }
             },
             borderRadius: {
