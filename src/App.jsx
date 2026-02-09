@@ -50,9 +50,14 @@ function App() {
 
                     <p className="flex items-center justify-center gap-2">
                         Desenvolvido por
-                        <strong className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 text-base font-extrabold tracking-wide hover:opacity-80 transition-opacity cursor-pointer">
+                        <a
+                            href="https://lucas-ulerich.vercel.app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 text-base font-extrabold tracking-wide hover:opacity-80 transition-opacity cursor-pointer"
+                        >
                             UlerichLabs
-                        </strong>
+                        </a>
                     </p>
                 </div>
             </footer>
