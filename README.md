@@ -12,7 +12,7 @@
 ## 📸 Preview
 
 <div align="center">
-  <img src="./public/logo.png" alt="Logo MF Despachante" width="200" style="margin-bottom: 20px;">
+  <img src="./src/assets/logo.png" alt="Logo MF Despachante" width="200" style="margin-bottom: 20px;">
   <br>
   <em>Identidade visual moderna com estética Neon e alta performance.</em>
 </div>
