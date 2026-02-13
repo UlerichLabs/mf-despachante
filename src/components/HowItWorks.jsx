@@ -14,13 +14,14 @@ const HowItWorks = () => {
                     Resolva tudo em <span className="text-transparent bg-clip-text bg-gradient-to-r from-mf-blue to-mf-red">3 passos simples</span>
                 </h2>
 
-                <div className="flex flex-col md:flex-row items-start justify-between gap-12 relative">
+                {/* CORREÇÃO AQUI: items-center (mobile) md:items-start (pc) */}
+                <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-12 relative w-full">
 
                     {/* Linha conectora */}
                     <div className="hidden md:block absolute top-14 left-24 right-24 h-1 bg-gradient-to-r from-mf-blue via-mf-red to-green-500 opacity-30 -z-10 rounded-full"></div>
 
                     {/* Passo 1 */}
-                    <div className="relative flex flex-col items-center flex-1 group">
+                    <div className="relative flex flex-col items-center flex-1 group w-full">
                         <div className="w-28 h-28 bg-[#1e1e1e] border-4 border-mf-blue rounded-[2rem] flex items-center justify-center text-mf-blue shadow-lg shadow-mf-blue/20 mb-8 group-hover:scale-105 transition-transform">
                             <MessageCircle size={44} />
                         </div>
@@ -31,7 +32,7 @@ const HowItWorks = () => {
                     </div>
 
                     {/* Passo 2 - ALTERADO AQUI */}
-                    <div className="relative flex flex-col items-center flex-1 group mt-8 md:mt-0">
+                    <div className="relative flex flex-col items-center flex-1 group mt-8 md:mt-0 w-full">
                         <div className="w-28 h-28 bg-[#1e1e1e] border-4 border-mf-red rounded-[2rem] flex items-center justify-center text-mf-red shadow-lg shadow-mf-red/20 mb-8 group-hover:scale-105 transition-transform">
                             <Search size={44} />
                         </div>
@@ -44,7 +45,7 @@ const HowItWorks = () => {
                     </div>
 
                     {/* Passo 3 */}
-                    <div className="relative flex flex-col items-center flex-1 group">
+                    <div className="relative flex flex-col items-center flex-1 group w-full">
                         <div className="w-28 h-28 bg-[#1e1e1e] border-4 border-green-500 rounded-[2rem] flex items-center justify-center text-green-500 shadow-lg shadow-green-500/20 mb-8 group-hover:scale-105 transition-transform">
                             <CheckCircle2 size={44} />
                         </div>
