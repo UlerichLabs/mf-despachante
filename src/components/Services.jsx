@@ -1,5 +1,6 @@
 import React from 'react';
 import { Car, Anchor, Plane, Shield } from 'lucide-react';
+import ScrollReveal from './ui/ScrollReveal';
 
 // Adicionei a propriedade 'color' e 'accent' para controlar as cores de cada card
 const categories = [
@@ -63,7 +64,7 @@ const Services = () => {
 
                 <div className="text-center mb-20">
                     <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                        Soluções completas <br/>
+                        Soluções completas <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-mf-blue to-mf-red">além do trânsito.</span>
                     </h2>
                     <p className="text-gray-400 text-xl max-w-3xl mx-auto font-light">
@@ -71,9 +72,10 @@ const Services = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <ScrollReveal variant="container" className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     {categories.map((cat, index) => (
-                        <div
+                        <ScrollReveal
+                            variant="item"
                             key={index}
                             className={`bg-[#1e1e1e] border border-white/5 rounded-[2.5rem] p-10 transition-all hover:border-opacity-100 hover:shadow-2xl group ${cat.accent.split(' ').slice(2).join(' ')}`}
                         >
@@ -93,9 +95,9 @@ const Services = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </ScrollReveal>
                     ))}
-                </div>
+                </ScrollReveal>
 
             </div>
         </section>

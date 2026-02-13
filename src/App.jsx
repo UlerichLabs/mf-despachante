@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import HowItWorks from './components/HowItWorks';
@@ -39,8 +40,8 @@ function App() {
                 <div className="flex flex-col items-center gap-6 mb-8 relative z-10">
                     <h2 className="text-3xl font-bold text-white">MF<span className="text-mf-blue">.</span></h2>
                     <p className="text-gray-400 text-lg max-w-md font-light leading-relaxed">
-                        Agilidade e confiança para sua documentação.<br/>
-                        <span className="text-white font-medium">(24) 2231-0028 • (24) 97402-8591</span> <br/>
+                        Agilidade e confiança para sua documentação.<br />
+                        <span className="text-white font-medium">(24) 2231-0028 • (24) 97402-8591</span> <br />
                         Petrópolis, RJ
                     </p>
                 </div>
@@ -50,14 +51,33 @@ function App() {
 
                     <p className="flex items-center justify-center gap-2">
                         Desenvolvido por
-                        <a
+                        <motion.a
                             href="https://lucas-ulerich.vercel.app"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 text-base font-extrabold tracking-wide hover:opacity-80 transition-opacity cursor-pointer"
+                            animate={{
+                                scale: [1, 1.05, 1],
+                                filter: [
+                                    "hue-rotate(0deg) brightness(1)",
+                                    "hue-rotate(90deg) brightness(1.2)",
+                                    "hue-rotate(0deg) brightness(1)"
+                                ],
+                                textShadow: [
+                                    "0px 0px 0px rgba(0,180,216,0)",
+                                    "0px 0px 10px rgba(0,180,216,0.5)",
+                                    "0px 0px 0px rgba(0,180,216,0)"
+                                ]
+                            }}
+                            transition={{
+                                duration: 2,
+                                repeat: Infinity,
+                                repeatDelay: 3,
+                                ease: "easeInOut"
+                            }}
                         >
                             UlerichLabs
-                        </a>
+                        </motion.a>
                     </p>
                 </div>
             </footer>

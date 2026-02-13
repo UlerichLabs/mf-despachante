@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Clock, Phone, ArrowUpRight } from 'lucide-react';
+import ScrollReveal from './ui/ScrollReveal';
 
 const Location = () => {
     return (
@@ -7,7 +8,7 @@ const Location = () => {
 
             <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-mf-blue/5 rounded-full blur-[100px] pointer-events-none" />
 
-            <div className="container mx-auto max-w-6xl">
+            <ScrollReveal className="container mx-auto max-w-6xl">
                 <div className="bg-[#1e1e1e] rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/5 flex flex-col lg:flex-row group hover:border-mf-blue/30 transition-all duration-500">
 
                     <div className="lg:w-2/5 p-10 flex flex-col justify-center gap-8 relative z-10 bg-[#1e1e1e]">
@@ -28,7 +29,7 @@ const Location = () => {
                                     <div>
                                         <h4 className="font-bold text-white text-lg">Alto da Serra</h4>
                                         <p className="text-gray-400 leading-relaxed">
-                                            Rua Padre Feijó, Nº 46 - Loja 5<br/>
+                                            Rua Padre Feijó, Nº 46 - Loja 5<br />
                                             Petrópolis - RJ, 25630-011
                                         </p>
                                         <a
@@ -89,7 +90,7 @@ const Location = () => {
                             src="https://maps.google.com/maps?q=MF+Despachante+Documentalista+Petropolis&t=&z=16&ie=UTF8&iwloc=&output=embed"
                             width="100%"
                             height="100%"
-                            style={{border:0, filter: 'grayscale(1) contrast(1.2) opacity(0.9)'}}
+                            style={{ border: 0, filter: 'grayscale(1) contrast(1.2) opacity(0.9)' }}
                             allowFullScreen=""
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
@@ -100,7 +101,7 @@ const Location = () => {
                     </div>
 
                 </div>
-            </div>
+            </ScrollReveal>
         </section>
     );
 };

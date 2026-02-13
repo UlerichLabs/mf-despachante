@@ -1,5 +1,6 @@
 import React from 'react';
 import { ExternalLink, Landmark, FileCheck, Anchor, Shield } from 'lucide-react';
+import ScrollReveal from './ui/ScrollReveal';
 
 const links = [
     {
@@ -31,7 +32,7 @@ const links = [
 const UsefulLinks = () => {
     return (
         <section className="bg-[#161616] py-16 px-4 border-y border-white/5">
-            <div className="container mx-auto max-w-6xl">
+            <ScrollReveal className="container mx-auto max-w-6xl">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-10">
                     <div>
                         <h3 className="text-2xl font-bold text-white mb-2">Links Úteis e Consultas</h3>
@@ -59,7 +60,7 @@ const UsefulLinks = () => {
                         </a>
                     ))}
                 </div>
-            </div>
+            </ScrollReveal>
         </section>
     );
 };
